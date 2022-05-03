@@ -15,7 +15,7 @@ If you have any questions, please feel free to [open an issue](https://github.co
 ## POS Concepts
 This document will walk you through the basic concepts and terms to understand POS with a few illustrative examples of the network architecture and software stack.
 
-- [PoseidonOS](../../doc/concepts/poseidonos.md) --- What is POS?
+- [PoseidonOS](/doc/concepts/poseidonos.md) --- What is POS?
 - [NVMe-over-Fabrics Interface](/doc/concepts/nvme_of_interface.md) --- Why new interface?
 - [Device and Array](/doc/concepts/device_and_array.md) --- What is POS Array? 
 - [Volume](/doc/concepts/volume.md) --- What is POS Volume?

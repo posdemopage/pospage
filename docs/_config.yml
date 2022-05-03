@@ -70,7 +70,6 @@ paginate_path:         /:num/
 
 # Theme
 # ---------------------------------------------------------------------------------------
-
 #theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
