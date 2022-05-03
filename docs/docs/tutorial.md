@@ -1,8 +1,6 @@
 ---
 layout: page
-title: Install
-description: >
-  -
+title: POS Tutorial
 hide_description: true
 sitemap: false
 ---
@@ -12,8 +10,6 @@ or change the theme of [an existing site](#existing-sites).
 
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
-# POS Tutorial
 
 ## Table of Contents
 - [Download the Source Code](#download-the-source-code)
