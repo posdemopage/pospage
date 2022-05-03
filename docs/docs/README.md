@@ -15,24 +15,24 @@ If you have any questions, please feel free to [open an issue](https://github.co
 ## POS Concepts
 This document will walk you through the basic concepts and terms to understand POS with a few illustrative examples of the network architecture and software stack.
 
-- [PoseidonOS](./concepts/poseidonos.md) --- What is POS?
-- [NVMe-over-Fabrics Interface](./concepts/nvme_of_interface.md) --- Why new interface?
-- [Device and Array](./concepts/device_and_array.md) --- What is POS Array? 
-- [Volume](./concepts/volume.md) --- What is POS Volume?
-- [Data Persistence and Consistency](./concepts/data_persistence_and_consistency.md) --- How does POS keep data persistence and consistency?
+- [PoseidonOS](../../doc/concepts/poseidonos.md) --- What is POS?
+- [NVMe-over-Fabrics Interface](../../doc/concepts/nvme_of_interface.md) --- Why new interface?
+- [Device and Array](../../doc/concepts/device_and_array.md) --- What is POS Array? 
+- [Volume](../../doc/concepts/volume.md) --- What is POS Volume?
+- [Data Persistence and Consistency](../../doc/concepts/data_persistence_and_consistency.md) --- How does POS keep data persistence and consistency?
 
 ## Tutorial
 - [User Guide](tutorial.md) --- POS tutorials for beginners.
 
 ## Development
-- [Design](./development/design/log_management.md) 
-- [Telemetry ID Rules](./development/telemetry/ID_RULES.md) 
-- [Telemetry Metrics](./development/telemetry/METRICS.md) 
+- [Design](.../../doc/development/design/log_management.md) 
+- [Telemetry ID Rules](../../doc/development/telemetry/ID_RULES.md) 
+- [Telemetry Metrics](../../doc/development/telemetry/METRICS.md) 
 
 ## Guides
-- [RESTAPI](./guides/rest_api/README.md)
+- [RESTAPI](../../doc/guides/rest_api/README.md)
 
 ## Troubleshooting
-- [Events](./troubleshooting/events.md) 
-- [Factory Reset](./troubleshooting/factory_reset.md) 
-- [FAQ](./troubleshooting/faq.md) 
+- [Events](../../doc/troubleshooting/events.md) 
+- [Factory Reset](../../doc/troubleshooting/factory_reset.md) 
+- [FAQ](../../doc/troubleshooting/faq.md) 
