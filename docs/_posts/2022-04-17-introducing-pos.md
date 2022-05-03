@@ -18,7 +18,8 @@ For decades, data center manufacturers and consumers could rely on each new CPU 
 To date, the OCP has benefited from the contributions of many companies. Samsung added its own expertise when it joined the OCP in 2015, and it helped organize global OCP conferences in 2020. Samsung is also especially involved in the OCP’s Korean organization .
 
 On the hardware front, Samsung has also launched an open hardware Poseidon server, a disaggregated storage platform capable of meeting the needs of both the hyperscaler server manufacturers and the general data center market. The Poseidon server offers up to 2~3 times the storage capacity of traditional flash system, with support for 32 Samsung E1.S drives at 8TB each in 1U system(256TB).
-Tremendous Performance in Storage system
+
+![01](../assets/img/blog/samsung02.webp)
 
 One key building block of this new storage platform is Samsung’s PCIe Gen4 PM9A3 SSD. The PM9A3 SSD is designed to maximize performance per watt. It uses Samsung’s sixth-generation V-NAND memory and offers PCIe Gen4 support. The PM9A3 dramatically improves performance over the fifth-generation PM983a, with a sequential read speed of 6950MB/s. This indicates about twice as much improvement as its predecessor. Furthermore, the PM9A3 provides superior power efficiency at 283MB/s per watt for sequential writes, making it nearly 50% more energy efficient than PM983a’s 188MB/s per watt.
 
@@ -26,7 +27,8 @@ One key building block of this new storage platform is Samsung’s PCIe Gen4 PM9
 
 ## Poseidon hardware
 
-![Poseidon ver.02](../assets/img/blog/PSDv2.jpg)
+![02](../assets/img/blog/samsung01.webp)
+
 The Poseidon OS (POS) included in Project Poseidon is also attracting attention. POS is a lightweight storage OS that offers improved performance and valuable features over the storage network. POS exploits the benefit of NVMe SSDs by optimizing the storage stack and leveraging the state-of-the-art high-speed interface. Also, it implements software-defined storage capabilities to meet the various needs of storage applications in a data center. With POS, industries can easily build composable disaggregated infrastructure in their data centers. The latest version of POS has been developed and tested with PCIe Gen4 interconnect, and was released on Github.
 
 Collaboration and cooperation are the engine that will power the next decade of advances in system design and semiconductor technology. Over the past 15 years, data centers have become increasingly efficient worldwide, with the industry’s average PUE (Power Usage Effectiveness) ratio falling from 2.5 in 2007 to 1.67 in 2019. Higher values indicate less-efficient data centers. Even 1.67 is high compared to what’s become standard in certain industries. The OCP has been responsible for some of this industry-wide improvement by fostering better communication between server customers and manufacturers, as well as between the various industry partners themselves.
@@ -41,8 +43,5 @@ The outcomes are clear to see. The Facebook data center in Prineville, Oregon, w
 Independent evaluations of the OCP point to its long-term success. Respected press outlets like The Next Platform have evaluated the state of the OCP and found evidence of long-term growth and rising popularity, writing: “Step by step, the OCP ecosystem keeps growing and improving on every key metric, and the base of customers and the amount of money that companies are spending on OCP iron – including servers, storage, switches, edge cell sites, and network interface cards – is also growing as a consequence.”
 
 Samsung has quickly released SSDs that satisfy the OCP SSD specifications and has continued to work on OCP projects, along with Project Poseidon. Samsung’s rapid application and engagement have allowed the company to lead the market and develop technology that works for the greater good. It has opened the door to future collaboration alongside other major system builders to build better data centers for the future.
-
-
-[^1]: This is the demo version homepage for POS. 
 
 
