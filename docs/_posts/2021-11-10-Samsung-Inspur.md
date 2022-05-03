@@ -1,6 +1,6 @@
 ---
 layout: post
-image: assets/img/blog/PSDv2.jpg
+image: /assets/img/blog/PSDv2.jpg
 sitemap: false
 
 ---
