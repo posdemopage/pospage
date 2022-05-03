@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Poseidon V2 E3.x Reference System
 image: assets/img/blog/PSDv2.jpg
 sitemap: false
 
 ---
-# Poseidon V2 E3.x Reference System
+# Poseidon V2 Reference System
 
 ## Inspur and Samsung Jointly Announce Poseidon V2 E3.x Reference System
 
