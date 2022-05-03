@@ -1,0 +1,300 @@
+Letter
+  = "A" | "B" | "C" | "D" | "E" | "F" | "G"
+  | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+  | "O" | "P" | "Q" | "R" | "S" | "T" | "U"
+  | "V" | "W" | "X" | "Y" | "Z" | "a" | "b"
+  | "c" | "d" | "e" | "f" | "g" | "h" | "i"
+  | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+  | "q" | "r" | "s" | "t" | "u" | "v" | "w"
+  | "x" | "y" | "z"
+  ;
+
+Digit
+  = "0" | "1" | "2" | "3" | "4" | "5" | "6"
+  | "7" | "8" | "9"
+  ;
+
+Number = Digit , { Digit } ;
+
+Symbol
+  = "[" | "]" | "{" | "}" | "(" | ")" | "<"
+  | ">" | "=" | "|" | "." | "," | ";"
+  ;
+
+Identifier = Letter , { Letter | Digit | "-" | "_" } ;
+
+BooleanValue = "true" | "false" ;
+
+ArrayName = Identifier ;
+
+DeviceName = Identifier ;
+
+DeviceType = "uram" | "pram" ;
+
+DeviceNameList = DeviceName , [ { "," , DeviceName } ] ;
+
+VolumeName = Identifier ;
+
+VolumeNameList = VolumeName , [ { "," , VolumeName } ] ;
+
+TargetNVMSubsystemNVMeQualifiedName = Identifier ;
+
+TransportServiceId = Identifier ;
+
+TargetAddress = Identifier ;
+
+SerialNumber = Identifier ;
+
+ModelNumber = Identifier ;
+
+MaxNamespaces = Number ;
+
+TransportType = Identifier ;
+
+BufCacheSize = Number ;
+
+NumSharedBuffers = Number ;
+
+RaidType = 
+  [ "RAID5"
+  | "raid5"
+  | "RAID0"
+  | "raid0"
+  | "RAID10"
+  | "raid10"
+  ] ;
+
+SubsystemNQN = Letter , { Letter | Digit | "-" | "_" } ;
+
+VolumeSize = Number ,
+  ( "B"  | "K" | "KiB" | "KB" | "G" | "GiB"
+  | "GB" | "T" | "TiB" | "TB" | "P" | "PiB"
+  | "PB" | "E" | "EiB" | "EB"
+  ) ;
+
+IOPS = Number ;
+
+Bandwidth = Number , "MB/s" ;
+
+ApplicationName = "poseidonos-cli" ;
+
+Cmd = ApplicationName ,
+  ( ArrayCmd  | VolumeCmd    | DeviceCmd
+  | SystemCmd | LoggerCmd    | SubsystemCmd
+  | QosCmd    | TelemetryCmd | DevelCmd
+  ) ;
+
+ArrayCmd = "array" ,
+  ( MountArrayCmd  | UnmountArrayCmd
+  | ListArrayCmd   | AddSpareCmd
+  | RemoveSpareCmd | DeleteArrayCmd
+  | CreateArrayCmd | AutoCreateArrayCmd
+  ) ;
+
+MountArrayCmd = "mount" , ( "--array-name" | "-a" ) ,
+  ArrayName ;
+
+UnmountArrayCmd = "unmount" , ( "--array-name" | "-a" ) ,
+  ArrayName , [ "--force" ] ;
+
+ListArrayCmd = "list" , [ ( "--array-name" | "-a" ) ,
+  ArrayName ] ;
+
+AddSpareCmd = "addspare" , ( "--spare" | "-s" ) ,
+  DeviceName , ( "--array-name" | "-a" ) , ArrayName ;
+
+RemoveSpareCmd = "rmspare" , ( "--spare" | "-s" ) ,
+  DeviceName , ( "--array-name" | "-a" ) , ArrayName ,
+  [ "--force" ] ;
+
+DeleteArrayCmd = "delete" , ( "--array-name" | "-a" ) ,
+  ArrayName , [ "--force" ] ;
+
+CreateArrayCmd = "create" , ( "--array-name" | "-a" ) ,
+  ArrayName , ( "--buffer" | "-b" ) , DeviceName ,
+  ( "--data-devs" | "-d" ) , DeviceNameList ,
+  [ ( "--spare" | "-s" ) , DeviceName ] , [ "--raid" ,
+  RaidType ] , [ "--no-buffer" ] ;
+
+AutoCreateArrayCmd = "autocreate" , ( "--array-name" | "-a" ) ,
+  ArrayName , ( "--buffer" | "-b" ) , DeviceName ,
+  ( "--num-data-devs" | "-d" ) , Number , [ ( "--num-spare" | "-s" ) , Number ] ,
+  [ "--raid" , RaidType ] , [ "--no-buffer" ] ;
+
+VolumeCmd = "volume" ,
+  ( VolumeCreateCmd  | VolumeDeleteCmd
+  | VolumeMountCmd   | VolumeMountWithSubsystemCmd
+  | VolumeUnmountCmd | VolumeListCmd
+  | VolumeRenameCmd
+  ) ;
+
+VolumeCreateCmd = "create" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--array-name" | "-a" ) , ArrayName ,
+  "--size" , VolumeSize , [ "--maxiops" , IOPS ] ,
+  [ "--maxbw" , Bandwidth ] ;
+
+VolumeDeleteCmd = "delete" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--array-name" | "-a" ) , ArrayName ,
+  [ "--force" ] ;
+
+VolumeMountCmd = "mount" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--array-name" | "-a" ) , ArrayName ,
+  [ "--subnqn" , TargetNVMSubsystemNVMeQualifiedName ] ,
+  [ ( "--trtype" | "-t" ) , TransportType ] ,
+  [ ( "--traddr" | "-i" ) , TargetAddress ] ,
+  [ ( "--trsvcid" | "-p" ) , TransportServiceId ] ,
+  [ "--force" ] ;
+
+VolumeMountWithSubsystemCmd = "mount" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--subnqn" | "-q" ) , SubsystemNQN ,
+  ( "--array-name" | "-a" ) , ArrayName , ( "--trtype" | "-t" ) ,
+  TransportType , ( "--traddr" | "-i" ) , TargetAddress ,
+  ( "--trsvcid" | "-p" ) , TransportServiceId ;
+
+VolumeUnmountCmd = "unmount" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--array-name" | "-a" ) , ArrayName ,
+  [ "--force" ] ;
+
+VolumeListCmd = "list" , ( "--array-name" | "-a" ) ,
+  ArrayName , [ ( "--volume-name" | "-v" ) , VolumeName ] ;
+
+VolumeRenameCmd = "rename" , ( "--volume-name" | "-v" ) ,
+  VolumeName , ( "--new-volume-name" | "-n" ) ,
+  VolumeName , ( "--array-name" | "-a" ) , ArrayName ;
+
+DeviceCmd = "device" ,
+  ( CreateDeviceCmd
+  | ScanDeviceCmd
+  | ListDeviceCmd
+  | SMARTLOGCmd
+  ) ;
+
+CreateDeviceCmd = "create" , ( "--device-name" | "-d" ) ,
+  DeviceName , [ "--num-blocks" , { Digit } ] ,
+  [ "--block-size" , { Digit } ] , [ "--device-type" ,
+  DeviceType ] ;
+
+ScanDeviceCmd = "scan" ;
+
+ListDeviceCmd = "list" ;
+
+SMARTLOGCmd = "smart-log" , ( "--device-name" | "-d" ) ,
+  DeviceName ;
+
+SystemCmd = "system" ,
+  ( StartSystemCmd
+  | StopSystemCmd
+  | SystemInfoCmd
+  | SetSystemPropertyCmd
+  ) ;
+
+StartSystemCmd = "start" ;
+
+StopSystemCmd = "stop" , [ "--force" ] ;
+
+SystemInfoCmd = "info" ;
+
+SetSystemPropertyCmd = "set-property" , [ "--rebuild-impact" ,
+  ( "high" | "low" ) ] ;
+
+LoggerCmd = "logger" ,
+  ( SetLogLevelCmd
+  | GetLogLevelCmd
+  | ApplyLogFilterCmd
+  | LoggerInfoCmd
+  | SetPreferenceCmd
+  ) ;
+
+SetLogLevelCmd = "set-level" , "--level" , LogLevel ;
+
+LogLevel
+  = "info"
+  | "debug"
+  | "warning"
+  | "error"
+  | "critical"
+  ;
+
+GetLogLevelCmd = "get-level" ;
+
+ApplyLogFilterCmd = "apply-filter" ;
+
+LoggerInfoCmd = "info" ;
+
+SetPreferenceCmd = "set-preference" , [ "--log-json" ,
+  BooleanValue ] ;
+
+QosCmd = "qos" ,
+  ( QosVolumePolicyCmd
+  | QosVolumeResetCmd
+  | QosListCmd
+  ) ;
+
+QosVolumePolicyCmd = "create" , ( "--volume-name" | "-v" ) ,
+  VolumeNameList , ( "--array-name" | "-a" ) ,
+  ArrayName , [ "--miniops" , IOPS ] , [ "--maxiops" , IOPS ] ,
+  [ "--minbw" , Bandwidth ] , [ "--maxbw" , Bandwidth ] ;
+
+QosVolumeResetCmd = "reset" , ( "--volume-name" | "-v" ) ,
+  VolumeNameList , ( "--array-name" | "-a" ) ,
+  ArrayName ;
+
+QosListCmd = "list" , [ ( "--volume-name" | "-v" ) ,
+  VolumeNameList ] , [ ( "--array-name" | "-a" ) ,
+  ArrayName ] ;
+
+SubsystemCmd = "subsystem" ,
+  ( CreateSubsystemCmd
+  | DeleteSubsystemCmd
+  | ListSubsystemCmd
+  | AddListenerCmd
+  | CreateTransportCmd
+  ) ;
+
+CreateSubsystemCmd = "create" , ( "--subnqn" | "-q" ) ,
+  SubsystemNQN , [ "--serial-number" , SerialNumber ] ,
+  [ "--model-number" , ModelNumber ] , [ ( "--max-namespaces" | "-m" ) ,
+  MaxNamespaces ] , [ ( "--allow-any-host" | "-o" ) ] ,
+  [ ( "--ana-reporting" | "-r" ) ] ;
+
+DeleteSubsystemCmd = "delete" , ( "--subnqn" | "-q" ) ,
+  SubsystemNQN , [ "--force" ] ;
+
+ListSubsystemCmd = "list" , [ ( "--subnqn" | "-q" ) ,
+  SubsystemNQN ] ;
+
+AddListenerCmd = "add-listener" , ( "--subnqn" | "-q" ) ,
+  SubsystemNQN , ( "--trtype" | "-t" ) , TransportType ,
+  ( "--traddr" | "-i" ) , TargetAddress , ( "--trsvcid" | "-p" ) ,
+  TransportServiceId ;
+
+CreateTransportCmd = "create-transport" ,
+  ( "--trtype" | "-t" ) , TransportType , [ ( "--buf-cache-size" | "-c" ) ,
+  BufCacheSize ] , [ "--num-shared-buf" , NumSharedBuffers ] ;
+
+TelemetryCmd = "telemetry" , ( TelemetryStartCmd | TelemetryStopCmd ) ;
+
+TelemetryStartCmd = TelemetryCmd , ( "start" ) ;
+
+TelemetryStopCmd = TelemetryCmd , ( "stop" ) ;
+
+DevelCmd = "devel" ,
+  ( ResetMbrCmd
+  | StopRebuildingCmd
+  | UpdateEventWrrCmd
+  | ResetEventWrrCmd
+  ) ;
+
+ResetMbrCmd = "resetmbr" ;
+
+StopRebuildingCmd = "stop-rebuilding" , ( "--array-name" | "-a" ) ,
+  ArrayName ;
+
+UpdateEventWrrCmd = "update-event-wrr" , "--name" ,
+  ( "flush"
+  | "fe_rebuild"
+  | "rebuild"
+  | "gc"
+  ) , "--weight" , ( "1" | "2" | "3" ) ;
+
+ResetEventWrrCmd = "reset-event-wrr" ;

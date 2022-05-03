@@ -1,0 +1,5 @@
+POS_ADD_UNIT_TEST(mss_opcode_ut mss_opcode_test.cpp)
+POS_ADD_UNIT_TEST(mss_ret_code_ut mss_ret_code_test.cpp)
+POS_ADD_UNIT_TEST(mss_utils_ut mss_utils_test.cpp)
+POS_ADD_UNIT_TEST(mss_ut mss_test.cpp)
+POS_ADD_UNIT_TEST(mss_state_ut mss_state_test.cpp)

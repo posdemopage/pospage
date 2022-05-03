@@ -1,0 +1,1 @@
+#POS_ADD_INTEGRATION_TEST(mapper_it_test mapper_it_test.cpp)

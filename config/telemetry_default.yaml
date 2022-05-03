@@ -1,0 +1,20 @@
+telemetry:
+    client:
+        target:
+            ip: localhost
+            port: 10101
+        enabled: true
+        rate_limit: 60
+        timeout_sec: 1
+        circuit_break_policy: none
+    server:
+        ip: localhost
+        port: 10101
+        enabled: true
+        buffer_size:
+            counters: 10000
+            histograms: 10000
+            gauges: 10000
+            latencies: 10000
+            typed_objects: 10000
+            influxdb_rows: 10000

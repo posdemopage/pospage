@@ -1,0 +1,1 @@
+POS_ADD_UNIT_TEST(allocator_service_ut allocator_service_test.cpp)

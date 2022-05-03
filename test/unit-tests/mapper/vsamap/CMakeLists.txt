@@ -1,0 +1,2 @@
+POS_ADD_UNIT_TEST(vsamap_manager_ut vsamap_manager_test.cpp)
+POS_ADD_UNIT_TEST(vsamap_content_ut vsamap_content_test.cpp)
