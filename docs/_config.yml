@@ -126,7 +126,7 @@ defaults:
       path:            licenses/
     values:
       layout:          plain
-      sitemap:         false
+      sitemap:         true
 
   # # You can use the following to enable comments on all posts.
   # - scope:
