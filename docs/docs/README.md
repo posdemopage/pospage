@@ -30,7 +30,9 @@ This document will walk you through the basic concepts and terms to understand P
 - [Telemetry Metrics](../../doc/development/telemetry/METRICS.md) 
 
 ## Guides
+- [CLI](../../doc/guides/cli/poseidonos-cli.md)
 - [RESTAPI](../../doc/guides/rest_api/README.md)
+- [Getting Started](../../doc/guides/getting_started/learning_best_practices.md)
 
 ## Troubleshooting
 - [Events](../../doc/troubleshooting/events.md) 
