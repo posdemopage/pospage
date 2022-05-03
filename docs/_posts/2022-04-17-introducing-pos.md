@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Samsung PoseidonOS (POS)
+title: Introducing Samsung Poseidon OS (POS)
 image: 
   path: /assets/img/blog/sea.jpg
 sitemap: false
