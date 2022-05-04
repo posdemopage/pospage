@@ -8,7 +8,8 @@ sitemap: false
 
 # The Poseidon Project
 
-## The Open Compute Project (OCP)
+## The Open Compute Project
+
 *The Open Compute Project (OCP)* is a multi-effort between a number of companies, including Facebook, Intel, Microsoft, Google, AMD, IBM, Rackspace, Samsung and others. Since its inception it has grown into the world’s largest open source hardware group.
 The purpose of the project is to combine the knowledge of hardware engineers and software developers across the industry to create better, more efficient servers, without expensive, proprietary solutions or unnecessary hardware. Hyperscale companies that operate large data centers are working to reduce the cost of building and operating open source hardware infrastructure through data center technology innovation and standardization. Improving server density and increasing performance per watt are also critical to the long-term goal of eliminating enterprise computing’s sizeable carbon footprint.
 
