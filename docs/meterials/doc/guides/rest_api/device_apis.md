@@ -1,10 +1,14 @@
 # Device APIs
 ## LISTDEVICE
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         |                                       |
 | URL          | http://{{host}}/api/ibofos/v1/devices |
+
+
 
 ### REST response - successful
 ```
@@ -78,11 +82,15 @@
 ```
 
 ## SCANDEVICE
+
+
 | REST element |                      Value                     |
 |:------------:|:----------------------------------------------:|
 | Method       | GET                                            |
 | Type         |                                                |
 | URL          | http://{{host}}/api/ibofos/v1/devices/all/scan |
+
+
 
 ### REST response - successful
 ```
@@ -108,11 +116,15 @@
 ```
 
 ## SMART
+
+
 | REST element |                            Value                            |
 |:------------:|:-----------------------------------------------------------:|
 | Method       | GET                                                         |
 | Type         |                                                             |
 | URL          | http://{{host}}/api/ibofos/v1/devices/{{deviceName1}}/smart |
+
+
 
 ### REST response - successful
 ```

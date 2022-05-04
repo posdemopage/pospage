@@ -4,11 +4,14 @@ This section contains advanced topics for developers' troubleshooting. 
 ## D-Agent: HEARTBEAT
 You could query on d-agent to retrieve its health/version information. 
 
+
 | REST element |                  Value                  |
 |:------------:|:---------------------------------------:|
 | Method       | GET                                     |
 | Type         | RAW                                     |
 | URL          | http://{{host}}/api/dagent/v1/heartbeat |
+
+
 
 ### REST response - successful
 ```
@@ -45,11 +48,13 @@ You could query on d-agent to retrieve its health/version information. 
 ## D-Agent: VERSION
 You could retrieve the version of the d-agent at the following REST endpoint. 
 
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         | RAW                                   |
 | URL          | http://{{host}}/api/dagent/v1/version |
+
 
 ### REST response - succssful
 ```
@@ -99,11 +104,15 @@ You could retrieve the version of the d-agent at the following REST endpoint. 
 ```
 
 ## D-agent: KILLDAGENT
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | DELETE                               |
 | Type         | RAW                                  |
 | URL          | http://{{host}}/api/dagent/v1/dagent |
+
+
 
 ### REST response - successful
 ```
@@ -128,11 +137,15 @@ You could retrieve the version of the d-agent at the following REST endpoint. 
 ```
 
 ### Documentation: HTML
+
+
 | REST element |                    Value                   |
 |:------------:|:------------------------------------------:|
 | Method       | GET                                        |
 | Type         |                                            |
 | URL          | http://{{host}}/api/dagent/v1/doc/api.html |
+
+
 
 ### REST response - successful
 ```
@@ -161,18 +174,26 @@ You could retrieve the version of the d-agent at the following REST endpoint. 
 ```
 
 ## Documentation: Markdown
+
+
 | REST element |                   Value                  |
 |:------------:|:----------------------------------------:|
 | Method       | GET                                      |
 | Type         |                                          |
 | URL          | http://{{host}}/api/dagent/v1/doc/api.md |
 
+
+
 ## POS: Event Codes
+
+
 | REST element |                     Value                     |
 |:------------:|:---------------------------------------------:|
 | Method       | GET                                           |
 | Type         |                                               |
 | URL          | http://{{host}}/api/dagent/v1/doc/events.yaml |
+
+
 
 
 ### REST response - successful
@@ -354,11 +375,15 @@ You could retrieve the version of the d-agent at the following REST endpoint. 
 ```
 
 ## POS: FORCEKILLIBOFOS
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | DELETE                               |
 | Type         | RAW                                  |
 | URL          | http://{{host}}/api/dagent/v1/ibofos |
+
+
 
 ### REST response - successful
 ```

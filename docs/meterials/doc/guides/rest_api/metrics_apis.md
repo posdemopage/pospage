@@ -2,11 +2,15 @@
 POS metrics are also available for CPU/Network/Array/Volume at the following endpoints in the interval of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, 30d, or accumulatively since POS started up.
 
 ## METRICS: CPU
+
+
 | REST element |               Value               |
 |:------------:|:---------------------------------:|
 | Method       | GET                               |
 | Type         |                                   |
 | URL          | http://{{host}}/api/metric/v1/cpu |
+
+
 
 ### REST response - successful
 ```
@@ -32,11 +36,15 @@ POS metrics are also available for CPU/Network/Array/Volume at the following end
 
 ## METRICS: CPU with Period
 The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | GET                                  |
 | Type         |                                      |
 | URL          | http://{{host}}/api/metric/v1/cpu/5m |
+
+
 
 ### REST response - successful
 ```
@@ -77,11 +85,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Latency
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         |                                       |
 | URL          | http://{{host}}/api/metric/v1/latency |
+
+
 
 ### REST response - successful
 ```
@@ -106,11 +118,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Latency with Period
+
+
 | REST element |                   Value                  |
 |:------------:|:----------------------------------------:|
 | Method       | GET                                      |
 | Type         |                                          |
 | URL          | http://{{host}}/api/metric/v1/latency/5m |
+
+
 
 ### REST response - successful
 ```
@@ -139,11 +155,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Memory
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | GET                                  |
 | Type         |                                      |
 | URL          | http://{{host}}/api/metric/v1/memory |
+
+
 
 ### REST response - successful
 ```
@@ -168,11 +188,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Memory with Period
+
+
 | REST element |                  Value                  |
 |:------------:|:---------------------------------------:|
 | Method       | GET                                     |
 | Type         |                                         |
 | URL          | http://{{host}}/api/metric/v1/memory/5m |
+
+
 
 ### REST response - successful
 ```
@@ -221,11 +245,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Network
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         |                                       |
 | URL          | http://{{host}}/api/metric/v1/network |
+
+
 
 ### REST response - successful
 ```
@@ -255,11 +283,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Network with Period
+
+
 | REST element |                   Value                  |
 |:------------:|:----------------------------------------:|
 | Method       | GET                                      |
 | Type         |                                          |
 | URL          | http://{{host}}/api/metric/v1/network/5m |
+
+
 
 ## REST response - successful
 ```
@@ -325,11 +357,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Read B/W
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | GET                                  |
 | Type         |                                      |
 | URL          | http://{{host}}/api/metric/v1/readbw |
+
+
 
 ### REST response - successful
 ```
@@ -354,11 +390,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Read B/W with Period
+
+
 | REST element |                  Value                  |
 |:------------:|:---------------------------------------:|
 | Method       | GET                                     |
 | Type         |                                         |
 | URL          | http://{{host}}/api/metric/v1/readbw/5m |
+
+
 
 ### REST response - successful
 ```
@@ -419,11 +459,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Read IOPS
+
+
 | REST element |                  Value                 |
 |:------------:|:--------------------------------------:|
 | Method       | GET                                    |
 | Type         |                                        |
 | URL          | http://{{host}}/api/metric/v1/readiops |
+
+
 
 ### REST response - successful
 ```
@@ -448,11 +492,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Read IOPS with Period
+
+
 | REST element |                   Value                   |
 |:------------:|:-----------------------------------------:|
 | Method       | GET                                       |
 | Type         |                                           |
 | URL          | http://{{host}}/api/metric/v1/readiops/5m |
+
+
 
 ### REST response - successful
 ```
@@ -509,11 +557,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: REBUILD LOG
+
+
 | REST element |                     Value                    |
 |:------------:|:--------------------------------------------:|
 | Method       | GET                                          |
 | Type         |                                              |
 | URL          | http://{{host}}/api/metric/v1/rebuildlogs/5m |
+
+
 
 ### REST response - successful
 ```
@@ -538,11 +590,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Latency
+
+
 | REST element |                      Value                      |
 |:------------:|:-----------------------------------------------:|
 | Method       | GET                                             |
 | Type         |                                                 |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/latency |
+
+
 
 ### REST response - successful
 ```
@@ -567,11 +623,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Latency with Period
+
+
 | REST element |                        Value                       |
 |:------------:|:--------------------------------------------------:|
 | Method       | GET                                                |
 | Type         |                                                    |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/latency/5m |
+
+
 
 ### REST response - successful
 ```
@@ -628,11 +688,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Read B/W
+
+
 | REST element |                      Value                     |
 |:------------:|:----------------------------------------------:|
 | Method       | GET                                            |
 | Type         |                                                |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/readbw |
+
+
 
 ### REST response - successful
 ```
@@ -657,11 +721,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Read B/W with Period
+
+
 | REST element |                       Value                       |
 |:------------:|:-------------------------------------------------:|
 | Method       | GET                                               |
 | Type         |                                                   |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/readbw/5m |
+
+
 
 ### REST response - successful
 ```
@@ -702,11 +770,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Read IOPS
+
+
 | REST element |                       Value                      |
 |:------------:|:------------------------------------------------:|
 | Method       | GET                                              |
 | Type         |                                                  |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/readiops |
+
+
 
 ### REST response - successful
 ```
@@ -731,20 +803,28 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Read IOPS with Period
+
+
 | REST element |                        Value                        |
 |:------------:|:---------------------------------------------------:|
 | Method       | GET                                                 |
 | Type         |                                                     |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/readiops/5m |
 
+
+
 ### REST response - successful
 
 ## METRICS: Volume Write B/W
+
+
 | REST element | Value |
 |:------------:|:-----:|
 | Method       | GET   |
 | Type         |       |
 | URL          |       |
+
+
 
 ### REST response - successful
 ```
@@ -797,11 +877,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Write B/W
+
+
 | REST element |                      Value                      |
 |:------------:|:-----------------------------------------------:|
 | Method       | GET                                             |
 | Type         |                                                 |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/writebw |
+
+
 
 ### REST response - successful
 ```
@@ -830,11 +914,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Write B/W IOPS
+
+
 | REST element |                       Value                       |
 |:------------:|:-------------------------------------------------:|
 | Method       | GET                                               |
 | Type         |                                                   |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/writeiops |
+
+
 
 ### REST response - successful 
 ```
@@ -859,11 +947,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Write B/W IOPS with Period
+
+
 | REST element |                         Value                        |
 |:------------:|:----------------------------------------------------:|
 | Method       | GET                                                  |
 | Type         |                                                      |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/writeiops/5m |
+
+
 
 ### REST response - successful
 ```
@@ -920,11 +1012,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Volume Write B/W with Period
+
+
 | REST element |                        Value                       |
 |:------------:|:--------------------------------------------------:|
 | Method       | GET                                                |
 | Type         |                                                    |
 | URL          | http://{{host}}/api/metric/v1/volumes/1/writebw/5m |
+
+
 
 ### REST response - successful
 ```
@@ -977,11 +1073,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Write B/W
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         |                                       |
 | URL          | http://{{host}}/api/metric/v1/writebw |
+
+
 
 ### REST response - successful
 ```
@@ -1006,11 +1106,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Write B/W with Period
+
+
 | REST element |                   Value                  |
 |:------------:|:----------------------------------------:|
 | Method       | GET                                      |
 | Type         |                                          |
 | URL          | http://{{host}}/api/metric/v1/writebw/5m |
+
+
 
 ### REST response - successful
 ```
@@ -1079,11 +1183,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Write IOPS
+
+
 | REST element |                  Value                  |
 |:------------:|:---------------------------------------:|
 | Method       | GET                                     |
 | Type         |                                         |
 | URL          | http://{{host}}/api/metric/v1/writeiops |
+
+
 
 ### REST response - successful
 ```
@@ -1108,11 +1216,15 @@ The unit of period could be one of 1m, 5m, 15m, 1h, 6h, 12h, 24h, 7d, or 30d.
 ```
 
 ## METRICS: Write IOPS with Period
+
+
 | REST element |                    Value                   |
 |:------------:|:------------------------------------------:|
 | Method       | GET                                        |
 | Type         |                                            |
 | URL          | http://{{host}}/api/metric/v1/writeiops/5m |
+
+
 
 ### REST response - successful
 ```
