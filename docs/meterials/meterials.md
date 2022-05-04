@@ -22,7 +22,7 @@ This document will walk you through the basic concepts and terms to understand P
 - [Data Persistence and Consistency](../doc/concepts/data_persistence_and_consistency.md) --- How does POS keep data persistence and consistency?
 
 ## Tutorial
-- [User Guide](../doc/tutorial.md) --- POS tutorials for beginners.
+- [User Guide](tutorial.md) --- POS tutorials for beginners.
 
 ## Development
 - [Design](../doc/development/design/log_management.md) 
