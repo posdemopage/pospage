@@ -46,4 +46,6 @@ poseidonos-cli [flags]
 * [poseidonos-cli telemetry](poseidonos-cli_telemetry.md)	 - Telemetry commands for PoseidonOS.
 * [poseidonos-cli volume](poseidonos-cli_volume.md)	 - Volume commands for PoseidonOS.
 * [poseidonos-cli wbt](poseidonos-cli_wbt.md)	 - White box test (WBT) commands for Poseidon OS
+* [poseidon-cli advaced](advanced_pos_cli_usage.md)
+* [RAILROAD](pos_railroad.html)
 

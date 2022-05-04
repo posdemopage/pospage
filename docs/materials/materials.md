@@ -4,7 +4,7 @@ title: Meterials
 description: >
 hide_description: true
 sitemap: false
-permalink: /meterials/
+permalink: /materials/
 ---
 
 ## *PoseidonOS (POS) guides, tutorials, and documents.*
