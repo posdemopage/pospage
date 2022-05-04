@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Meterials
+title: Materials
 description: >
 hide_description: true
 sitemap: false
