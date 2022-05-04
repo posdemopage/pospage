@@ -4,9 +4,9 @@ image: /assets/img/blog/PSDv2.jpg
 sitemap: false
 
 ---
-# Poseidon V2 Reference System
+# Poseidon V2 E3.x Reference System
 
-## Inspur and Samsung Jointly Announce Poseidon V2 E3.x Reference System
+## Inspur and Samsung Jointly Announce Poseidon V2 System
 
 During the annual OCP Global Summit in San Jose, Inspur and Samsung have announced the joint launch of the Poseidon V2 E3.x reference system. This server adopted composable architecture to maximize the benefits of the EDSFF E3.x form factor. Not only does the new Poseidon V2 support PCIe Gen5 SSDs, but also a range of other devices like AI/ML accelerators or CXL Memory Expanders. With this flexibility, organizations can configure the system according to their data center needs as this open standards server marches toward mainstream use cases.
 

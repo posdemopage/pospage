@@ -5,15 +5,8 @@ image:
   path: /assets/img/blog/sea.jpg
 sitemap: false
 ---
+# The Poseidon Project: Towards a More Open Future
 
-# The Poseidon Project
-
-## The Open Compute Project
-
-*The Open Compute Project (OCP)* is a multi-effort between a number of companies, including Facebook, Intel, Microsoft, Google, AMD, IBM, Rackspace, Samsung and others. Since its inception it has grown into the world’s largest open source hardware group.
-The purpose of the project is to combine the knowledge of hardware engineers and software developers across the industry to create better, more efficient servers, without expensive, proprietary solutions or unnecessary hardware. Hyperscale companies that operate large data centers are working to reduce the cost of building and operating open source hardware infrastructure through data center technology innovation and standardization. Improving server density and increasing performance per watt are also critical to the long-term goal of eliminating enterprise computing’s sizeable carbon footprint.
-
-## Towards a More Open Future
 For decades, data center manufacturers and consumers could rely on each new CPU generation delivering better performance, as well as a lower power envelope. CPUs still get smaller with each new generation of technology, but power efficiency and performance gains from lithography are smaller than they once were. Today, improving performance means less reliance on lithography and more emphasis on solving energy losses and bottlenecks within other parts of the system. Because the OCP touches every aspect of the data center, from server cooling and airflow to rack design and storage specifications, this kind of cross-industry collaboration is critical to sustaining the innovation that has driven performance improvements across the computing industry. To date, the OCP has benefited from the contributions of many companies. Samsung added its own expertise when it joined the OCP in 2015, and it helped organize global OCP conferences in 2020. Samsung is also especially involved in the OCP’s Korean organization.
 
 On the hardware front, Samsung has also launched an open hardware Poseidon server, a disaggregated storage platform capable of meeting the needs of both the hyperscaler server manufacturers and the general data center market. The Poseidon server offers up to 2~3 times the storage capacity of traditional flash system, with support for 32 Samsung E1.S drives at 8TB each in 1U system(256TB).
