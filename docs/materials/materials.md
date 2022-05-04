@@ -7,7 +7,7 @@ sitemap: false
 permalink: /materials/
 ---
 
-## *PoseidonOS (POS) guides, tutorials, and documents.*
+## POS guides, tutorials, and documents
 
 If you have any questions, please feel free to [open an issue](https://github.com/poseidonos/poseidonos/issues) on GitHub.
 {:.note}
