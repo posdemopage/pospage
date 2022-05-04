@@ -5,7 +5,9 @@ image:
   path: /assets/img/blog/sea.jpg
 sitemap: false
 ---
-# The Poseidon Project: Towards a More Open Future
+# The Poseidon Project
+
+## Towards a More Open Future
 
 For decades, data center manufacturers and consumers could rely on each new CPU generation delivering better performance, as well as a lower power envelope. CPUs still get smaller with each new generation of technology, but power efficiency and performance gains from lithography are smaller than they once were. Today, improving performance means less reliance on lithography and more emphasis on solving energy losses and bottlenecks within other parts of the system. Because the OCP touches every aspect of the data center, from server cooling and airflow to rack design and storage specifications, this kind of cross-industry collaboration is critical to sustaining the innovation that has driven performance improvements across the computing industry. To date, the OCP has benefited from the contributions of many companies. Samsung added its own expertise when it joined the OCP in 2015, and it helped organize global OCP conferences in 2020. Samsung is also especially involved in the OCP’s Korean organization.
 

@@ -22,3 +22,4 @@ hide_description: true
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 sitemap: false
 ---
+<!--author-->
