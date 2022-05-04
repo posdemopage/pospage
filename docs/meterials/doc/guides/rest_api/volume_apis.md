@@ -1,10 +1,13 @@
 # Volume APIs
 ## CREATEVOLUME
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | POST                                  |
 | Type         | RAW                                   |
 | URL          | http://{{host}}/api/ibofos/v1/volumes |
+
 
 ### REST body in the request
 ```
@@ -67,11 +70,15 @@
 ```
 
 ## DELETEVOLUME
+
+
 | REST element |                         Value                         |
 |:------------:|:-----------------------------------------------------:|
 | Method       | DELETE                                                |
 | Type         | RAW                                                   |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/{{volumeName1}} |
+
+
 
 ### REST body in the request
 ```
@@ -131,11 +138,15 @@
 ```
 
 ## LISTVOLUME
+
+
 | REST element |                 Value                 |
 |:------------:|:-------------------------------------:|
 | Method       | GET                                   |
 | Type         | RAW                                   |
 | URL          | http://{{host}}/api/ibofos/v1/volumes |
+
+
 
 ### REST response - successful
 ```
@@ -183,11 +194,15 @@
 ```
 
 ## MAXVOLUMECOUNT
+
+
 | REST element |                      Value                     |
 |:------------:|:----------------------------------------------:|
 | Method       | GET                                            |
 | Type         | RAW                                            |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/maxcount |
+
+
 
 ### REST response - successful
 ```
@@ -216,11 +231,15 @@
 ```
 
 ## MOUNTVOLUME
+
+
 | REST element |                            Value                            |
 |:------------:|:-----------------------------------------------------------:|
 | Method       | POST                                                        |
 | Type         | RAW                                                         |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/{{volumeName1}}/mount |
+
+
 
 ### REST body in the request
 ```
@@ -279,11 +298,15 @@
 ```
 
 ## RENAMEVOLUME
+
+
 | REST element |                         Value                         |
 |:------------:|:-----------------------------------------------------:|
 | Method       | PATCH                                                 |
 | Type         | RAW                                                   |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/{{volumeName1}} |
+
+
 
 ### REST body in the request
 ```
@@ -344,11 +367,15 @@
 ```
 
 ## UNMOUNTVOLUME
+
+
 | REST element |                            Value                            |
 |:------------:|:-----------------------------------------------------------:|
 | Method       | DELETE                                                      |
 | Type         | RAW                                                         |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/{{volumeName1}}/mount |
+
+
 
 ### REST body in the request
 ```
@@ -408,11 +435,15 @@
 ```
 
 ## UPDATEVOLUMEQOS
+
+
 | REST element |                           Value                           |
 |:------------:|:---------------------------------------------------------:|
 | Method       | PATCH                                                     |
 | Type         | RAW                                                       |
 | URL          | http://{{host}}/api/ibofos/v1/volumes/{{volumeName1}}/qos |
+
+
 
 ### REST body in the request
 ```

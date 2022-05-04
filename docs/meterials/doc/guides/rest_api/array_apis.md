@@ -1,10 +1,12 @@
 # Array APIs
 ## CREATEARRAY
+
 | REST element |                Value                |
 |:------------:|:-----------------------------------:|
 | Method       | POST                                |
 | Type         | RAW                                 |
 | URL          | http://{{host}}/api/ibofos/v1/array |
+
 
 ### REST body in the request
 ```
@@ -82,11 +84,15 @@
 ```
 
 ## DELETEARRAY
+
+
 | REST element |                       Value                       |
 |:------------:|:-------------------------------------------------:|
 | Method       | DELETE                                            |
 | Type         | RAW                                               |
 | URL          | http://{{host}}/api/ibofos/v1/array/{{arrayName}} |
+
+
 
 
 ### REST response - successful
@@ -135,11 +141,15 @@
 ```
 
 ## LISTARRAYDEVICE
+
+
 | REST element |                           Value                           |
 |:------------:|:---------------------------------------------------------:|
 | Method       | GET                                                       |
 | Type         | RAW                                                       |
 | URL          | http://{{host}}/api/ibofos/v1/array/{{arrayName}}/devices |
+
+
 
 ### REST response - successful
 ```
@@ -187,12 +197,16 @@
 }
 ```
 
-## LOADARRAY
+## LOADARRAY  
+
+
 | REST element |                           Value                           |
 |:------------:|:---------------------------------------------------------:|
 | Method       | GET                                                       |
 | Type         | RAW                                                       |
 | URL          | http://{{host}}/api/ibofos/v1/{{arrayName}}/POSArray/load |
+
+
 
 ### REST response - failed
 ```

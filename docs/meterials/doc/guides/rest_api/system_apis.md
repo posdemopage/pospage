@@ -1,10 +1,14 @@
 # System APIs
 ## STOPPOS
+
+
 | REST element | Value                                |
-|:------------:|:------------------------------------:|
+|------------|------------------------------------|
 | Method       | DELETE                               |
 | Type         |                                      |
 | URL          | http://{{host}}/api/ibofos/v1/system |
+
+
 
 ### REST response - successful
 ```
@@ -55,11 +59,15 @@
 ```
 
 ## MOUNTIBOFOS
+
+
 | REST element | Value                                      |
 |:------------:|--------------------------------------------|
 | Method       | POST                                       |
 | Type         |                                            |
 | URL          | http://{{host}}/api/ibofos/v1/system/mount |
+
+
 
 ### REST response - successful
 ```
@@ -107,11 +115,15 @@
 ```
 
 # RUNIBOFOS
+
+
 | REST element | Value                                |
 |:------------:|--------------------------------------|
 | Method       | POST                                 |
 | Type         |                                      |
 | URL          | http://{{host}}/api/ibofos/v1/system |
+
+
 
 ### REST response - successful
 ```
@@ -151,11 +163,15 @@
 ```
 
 ## UNMOUNTIBOFOS
+
+
 | REST element |                    Value                   |
 |:------------:|:------------------------------------------:|
 | Method       | DELETE                                     |
 | Type         |                                            |
 | URL          | http://{{host}}/api/ibofos/v1/system/mount |
+
+
 
 ### REST response - successful
 ```
@@ -204,11 +220,15 @@
 ```
 
 ## IBOFOSINFO
+
+
 | REST element |                 Value                |
 |:------------:|:------------------------------------:|
 | Method       | GET                                  |
 | Type         | RAW                                  |
 | URL          | http://{{host}}/api/ibofos/v1/system |
+
+
 
 ### REST response - successful
 ```

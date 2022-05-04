@@ -1,4 +1,6 @@
 # Event Level (Severity)
+
+
 | Event Level (Severity) | Description                                                                          |
 |------------------------|--------------------------------------------------------------------------------------|
 | Critical               | When the system has completely failed because a severe system error.                 |
@@ -7,7 +9,11 @@
 | Info                   | Logs for normal I/O and internal operations.                                         |
 | Debug                  | Logs for normal I/O, internal operations when the binary is built with debug option. |
 
+
+
 # Event Code
+
+
 | Event Code | Event Name                                      | Severity        | Description(s)                                                                                                           |   |
 |------------|-------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------|---|
 | 0          | SUCCESS                                         |                 |                                                                                                                          |   |
@@ -657,3 +663,4 @@
 | 10001      | DEBUG_MEMORY_CHECK_INVALID_ACCESS               | ERROR           | invalid access base : {} size : {}                                                                                       |   |
 | 2147483646 | EVENT_ID_MAPPING_WRONG                          | ERROR           | Mapping EventID with Message is wrong: Requested eventId: {},                                                            |   |
 | 2147483647 | RESERVED                                        | ERROR           | Reserved, Not defined, yet!!                                                                                             |   |
+
